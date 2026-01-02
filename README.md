@@ -22,3 +22,9 @@ This repo is intentionally public to improve:
 - No business logic
 - No execution code
 - No infrastructure
+## Usage
+
+```ts
+import type { ApiResponse, GetMarketsResponse } from "@zoryu/trade-contracts";
+
+type MarketsApi = ApiResponse<GetMarketsResponse>;
