@@ -28,3 +28,13 @@ This repo is intentionally public to improve:
 import type { ApiResponse, GetMarketsResponse } from "@zoryu/trade-contracts";
 
 type MarketsApi = ApiResponse<GetMarketsResponse>;
+```
+## Versioning Policy
+
+This repo follows semantic versioning:
+
+- **PATCH**: non-breaking fixes (docs, stricter validation that still accepts valid payloads)
+- **MINOR**: backward-compatible additions (new fields optional, new endpoints types)
+- **MAJOR**: breaking changes (renamed fields, removed fields, required field changes)
+
+Breaking changes must be documented in `CHANGELOG.md`.
